@@ -5,9 +5,9 @@ import "../../../node_modules/bootstrap/dist/css/bootstrap.css";
 const Demo = (props) => {
   const list = props.modules.map((i, index) =>
   <tr key = {index}>
-    <a href={i.url}> {i.name}</a> 
-    <a href={i.url}>{i.noLectures}</a>
-    <a href={i.url}>{i.noPracticals}</a> 
+    <td>{i.name}</td>
+    <td>{i.noLectures}</td>
+    <td>{i.noPracticals}</td>
   </tr>
   ); 
   return (
@@ -22,11 +22,11 @@ const Demo = (props) => {
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>
+        
+          
           {list}
-          </td>
-        </tr>
+
+        
       </tbody>
     </table>
 
